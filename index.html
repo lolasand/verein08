@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BE-Embed Local Test</title>
+    <meta name="viewport" charset="UTF-8"  />
+    <style>
+      #balloon-events-parent {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #balloon-events-target {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your existing HTML and JavaScript code -->
+    <div id="balloon-events-parent">
+      <div id="balloon-events-target">        
+      </div>
+    <script src="https://res.balloon-events.com/embed/main/loader.js"></script>
+    <script>
+      const options = {
+        routingType: "hash",
+        type: "map",
+        language: "de",
+        legacyAPI: false,
+        key: "V08-945845120ceb0442d5c1cfb8",
+        initialLocation: undefined,
+        showBookmarkButton: true,
+        mobileRootQuery: {
+          amount: 5,
+        },
+        showDebug: true,
+        showCreatorLink: "true",
+        cooperativeGestures: true,
+      };
+      window.balloons.render(
+        document.getElementById("balloon-events-target"),
+        options
+      );
+    </script>
+  </body>
+</html>
