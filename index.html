@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>BE-Embed Local Test</title>
-    <meta name="viewport" charset="UTF-8"  />
+    <meta name="viewport" charset="UTF-8" />
     <style>
       #balloon-events-parent {
         width: 800px;
@@ -15,13 +15,25 @@
         width: 100%;
         height: 100%;
       }
+      /* Optional: Add some basic styling for your images here */
+      .top-image {
+        max-width: 100%; /* Make images responsive */
+        height: auto;    /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add some space below the image */
+        display: block; /* Ensures images are on their own line */
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto; /* Center the image horizontally */
+      }
     </style>
   </head>
   <body>
-    <!-- Your existing HTML and JavaScript code -->
+
+    <img src="path/to/your/image1.jpg" alt="Description of your first image" class="top-image">
+    <img src="path/to/your/image2.png" alt="Description of your second image" class="top-image">
     <div id="balloon-events-parent">
-      <div id="balloon-events-target">        
+      <div id="balloon-events-target">
       </div>
+    </div>
     <script src="https://res.balloon-events.com/embed/main/loader.js"></script>
     <script>
       const options = {
